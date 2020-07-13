@@ -1,0 +1,16 @@
+{% block body %}
+
+<div class="jumbotron text-center">
+</div>
+
+
+<p>
+        {% if request.user.is_authenticated %}
+                username, {{request.user.username}}
+        {% else %}
+                Shyam Sunder
+        {% endif %}
+
+</p>
+{% endblock body %}
+
